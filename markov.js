@@ -30,6 +30,11 @@ class MarkovMachine {
     this.chains = chains;
   }
 
+  //Pick a random choice from array
+
+  static choice(ar){
+    return ar[Math.floor(Math.random()* ar.length)];
+  }
 
   /** return random text from chains */
 
